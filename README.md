@@ -72,7 +72,7 @@ We can join tables together by matching fields and using the keyword `JOIN`.
 For example, you can use the following query to search for email addresses:
 
 ```SQL
-SELECT url, title, content FROM moz_places JOIN moz_bookmarks ON moz_places.id = moz_bookmarks.fk WHERE content LIKE '%@%' AND url LIKE 'http%';
+SELECT url, title FROM moz_places JOIN moz_bookmarks ON moz_places.id = moz_bookmarks.fk WHERE content LIKE '%@%' AND url LIKE 'http%';
 ```
 
 This query will search for email addresses in the URL or page 
